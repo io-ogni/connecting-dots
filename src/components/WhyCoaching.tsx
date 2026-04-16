@@ -12,25 +12,25 @@ const WhyCoaching = () => {
           transition={{ duration: 0.8 }}
         >
           <p className="text-accent font-body text-sm tracking-[0.2em] uppercase mb-4">
-            The journey begins
+            The honest truth
           </p>
           <h2 className="font-heading text-4xl md:text-5xl text-foreground leading-tight mb-8">
             Why coaching?
           </h2>
           <div className="space-y-5 text-muted-foreground font-body text-lg leading-relaxed">
             <p>
-              Because nowadays change is in every breath we take. From jobs, teams
-              and companies changing overnight, to personal relationships — it all
-              calls for changes more than ever before.
+              You've built the career, hit the milestones, checked the boxes. 
+              But something feels off — like you're living someone else's plan.
             </p>
             <p>
-              And behind every change there is a fear. But then, as Jacques Salomé
-              would say, <em>"behind every fear, there is a wish."</em>
+              That nagging feeling isn't a breakdown. It's a signal. 
+              Behind every "I should be happy by now" is a deeper question 
+              waiting to be asked.
             </p>
             <p>
-              Coaching creates the needed space to discover our own values,
-              strengths and needs, and gives the chance to work on what is limiting
-              us in achieving our goals — whatever these may be.
+              Coaching gives you the space to slow down, ask real questions, 
+              and reconnect with what actually matters to <em>you</em> — 
+              not your LinkedIn profile.
             </p>
           </div>
         </motion.div>

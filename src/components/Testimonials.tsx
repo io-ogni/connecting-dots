@@ -3,21 +3,21 @@ import { motion } from "framer-motion";
 const testimonials = [
   {
     quote:
-      "Coaching with Ioana was a bliss, a special moment of coherence, clarity, and energy booster. She helped me taking a distance from my daily work in order to project myself and find meaning and pleasure in my job.",
+      "Coaching with Ioana was a bliss — a moment of coherence, clarity, and an energy booster. She helped me step back from daily chaos to find meaning and real pleasure in my work.",
     name: "Cristina O.",
     location: "Paris, France",
     emoji: "✨",
   },
   {
     quote:
-      "Ioana guided me to identify better my personal and professional goals and priorities. Positive attitude, clear communication, patience, very knowledgeable — all these qualities make Ioana the best coach that I worked with.",
+      "Ioana helped me identify my real goals and priorities — not the ones I thought I should have. Positive, clear, patient, and incredibly knowledgeable. The best coach I've worked with.",
     name: "Fani P.",
     location: "Bucharest, Romania",
     emoji: "🌿",
   },
   {
     quote:
-      "She listened to everything I said and really kept me focused. She also held me accountable for the goals I set for myself. My sessions with Ioana have given me confidence, clarity and motivation.",
+      "She kept me focused and held me accountable. After our sessions I had confidence, clarity on next steps, and actual motivation again. Can't recommend her enough.",
     name: "Kevin R.",
     location: "Dublin, Ireland",
     emoji: "🔥",
@@ -27,7 +27,6 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section className="py-24 md:py-32 bg-secondary relative overflow-hidden">
-      {/* Decorative background elements */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-accent/5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full translate-x-1/3 translate-y-1/3 blur-3xl" />
 
@@ -40,10 +39,10 @@ const Testimonials = () => {
           className="text-center mb-16"
         >
           <p className="text-accent font-body text-sm tracking-[0.2em] uppercase mb-4">
-            Testimonials
+            Real people, real shifts
           </p>
           <h2 className="font-heading text-4xl md:text-5xl text-foreground">
-            Words from clients
+            What clients say
           </h2>
         </motion.div>
 
@@ -58,7 +57,6 @@ const Testimonials = () => {
               whileHover={{ y: -6, transition: { duration: 0.3 } }}
               className="group relative bg-background/80 backdrop-blur-sm rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-500 border border-border/50"
             >
-              {/* Accent top bar */}
               <div className="absolute top-0 left-8 right-8 h-0.5 bg-gradient-to-r from-transparent via-accent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
               <span className="text-3xl mb-4 block">{t.emoji}</span>

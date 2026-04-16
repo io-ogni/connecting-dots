@@ -37,22 +37,22 @@ const About = () => {
           </h2>
           <div className="space-y-5 text-muted-foreground font-body text-lg leading-relaxed">
             <p>
-              I am a certified Personal, Leadership &amp; Executive Coach
-              (Kingstown College, Ireland), member of EMCC, and experienced IT
-              Product and Project Manager with over a decade of delivering IT
-              projects touching the lives of tens of millions of people.
+              I'm a certified Personal, Leadership & Executive Coach with 
+              over a decade of shipping IT products used by tens of millions. 
+              I've led global teams, managed multi-million dollar projects, 
+              and learned the hard way that success without self-awareness 
+              is just a fancy hamster wheel.
             </p>
             <p>
-              Having successfully delivered several multi-million dollar projects
-              and having led countless teams from all over the world, I am proud
-              and grateful to have worked together with incredibly talented
-              people, from whom I learned and continue to learn every day.
+              Now I help driven professionals — the kind who've always been 
+              "fine" — pause long enough to ask the questions that actually 
+              matter. No corporate jargon. No guru vibes. Just honest, 
+              structured conversations that move you forward.
             </p>
             <p className="text-foreground font-medium italic border-l-2 border-accent pl-6">
-              In my personal practice, coaching is all about creating a safe
-              space for reflection and creativity, where the Client feels
-              empowered to connect the dots and to reach more clarity and focus
-              during a change process.
+              Coaching is about creating a space where you can finally hear 
+              yourself think — and start connecting the dots between who 
+              you are and who you want to become.
             </p>
           </div>
         </motion.div>

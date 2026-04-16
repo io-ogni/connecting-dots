@@ -28,17 +28,24 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className="font-heading text-5xl md:text-7xl lg:text-8xl text-primary-foreground leading-[1.1] mb-6"
         >
-          Connect the dots,
+          You're not lost.
           <br />
-          <em className="font-normal">design your life</em>
+          <em className="font-normal">You're just ready</em>
           <br />
-          with clarity
+          to grow.
         </motion.h1>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.9 }}
+          className="text-primary-foreground/70 font-body text-lg md:text-xl max-w-xl mx-auto mb-10"
+        >
+          Coaching for ambitious professionals who are ready to stop running on autopilot and start designing a life that actually fits.
+        </motion.p>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.2 }}
-          className="mt-10"
         >
           <a
             href="#why-coaching"

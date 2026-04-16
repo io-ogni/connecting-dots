@@ -6,26 +6,25 @@ const services = [
     icon: Compass,
     title: "Personal Development",
     description:
-      "The bottom line in any change we go through is the fact that we grow. This requires courage for self-discovery, a strong connection to reality, but also to our creative child within us.",
+      "Figure out what you actually want — not what you think you should want. We'll cut through the noise and reconnect you with your values, strengths, and the things that light you up.",
   },
   {
     icon: Users,
     title: "Team Leadership",
     description:
-      "Articulating the vision, team motivation, communication and feedback, strategic thinking, emotional intelligence. What kind of leader do you want to be?",
+      "You got promoted. Now what? Build the confidence to lead authentically — with empathy, clarity, and your own style. No corporate playbook required.",
   },
   {
     icon: Clock,
     title: "Time Management",
     description:
-      "We cannot manage time — what we can do is decide what we focus on, pragmatically plan what we can achieve, learn from what went wrong and improve.",
+      "Always busy, never productive? Let's find out where your time actually goes and build systems that work with your brain — not against it.",
   },
 ];
 
 const Services = () => {
   return (
     <section className="relative py-24 md:py-32 overflow-hidden">
-      {/* Rich layered background */}
       <div className="absolute inset-0 bg-gradient-to-br from-accent/8 via-secondary to-primary/5" />
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent/6 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-primary/5 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4" />
@@ -43,7 +42,7 @@ const Services = () => {
             How I can help
           </p>
           <h2 className="font-heading text-4xl md:text-5xl text-foreground">
-            Coaching &amp; Mentoring Services
+            Three areas, one goal: clarity
           </h2>
         </motion.div>
 

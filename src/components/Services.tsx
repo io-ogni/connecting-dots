@@ -24,8 +24,14 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-24 md:py-32 bg-secondary">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="relative py-24 md:py-32 overflow-hidden">
+      {/* Rich layered background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-accent/8 via-secondary to-primary/5" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent/6 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-primary/5 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4" />
+      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)', backgroundSize: '40px 40px' }} />
+
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -49,15 +55,21 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
-              className="bg-background p-10 rounded-sm group hover:shadow-lg transition-shadow duration-500"
+              whileHover={{ y: -4, transition: { duration: 0.3 } }}
+              className="relative bg-background/70 backdrop-blur-sm p-10 rounded-2xl group hover:shadow-xl transition-all duration-500 border border-border/40 hover:border-accent/30"
             >
-              <service.icon className="w-8 h-8 text-accent mb-6 group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="font-heading text-2xl text-foreground mb-4">
-                {service.title}
-              </h3>
-              <p className="text-muted-foreground font-body leading-relaxed">
-                {service.description}
-              </p>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative z-10">
+                <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/15 transition-colors duration-300">
+                  <service.icon className="w-7 h-7 text-accent group-hover:scale-110 transition-transform duration-300" />
+                </div>
+                <h3 className="font-heading text-2xl text-foreground mb-4">
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground font-body leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>

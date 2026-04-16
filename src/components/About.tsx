@@ -15,7 +15,7 @@ const About = () => {
           <img
             src={portrait}
             alt="Ioana Ognibeni, Personal & Leadership Coach"
-            className="w-full rounded-sm shadow-xl"
+            className="w-full rounded-2xl shadow-2xl hover:shadow-3xl transition-shadow duration-500"
             loading="lazy"
             width={800}
             height={1000}
@@ -49,7 +49,7 @@ const About = () => {
               matter. No corporate jargon. No guru vibes. Just honest, 
               structured conversations that move you forward.
             </p>
-            <p className="text-foreground font-medium italic border-l-2 border-accent pl-6">
+            <p className="text-foreground font-medium italic border-l-3 border-accent pl-6 bg-accent/5 py-4 pr-4 rounded-r-xl">
               Coaching is about creating a space where you can finally hear 
               yourself think — and start connecting the dots between who 
               you are and who you want to become.

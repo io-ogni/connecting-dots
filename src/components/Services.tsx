@@ -50,17 +50,17 @@ const Services = () => {
           {services.map((service, i) => (
             <motion.div
               key={service.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 30, scale: 0.97 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.15 }}
-              whileHover={{ y: -4, transition: { duration: 0.3 } }}
-              className="relative bg-background/70 backdrop-blur-sm p-10 rounded-2xl group hover:shadow-xl transition-all duration-500 border border-border/40 hover:border-accent/30"
+              transition={{ type: "spring", stiffness: 100, delay: i * 0.12 }}
+              whileHover={{ y: -6, scale: 1.02, transition: { type: "spring", stiffness: 300 } }}
+              className="relative bg-background/60 backdrop-blur-md p-10 rounded-3xl group hover:shadow-2xl transition-all duration-500 border border-border/30 hover:border-accent/40"
             >
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="relative z-10">
-                <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/15 transition-colors duration-300">
-                  <service.icon className="w-7 h-7 text-accent group-hover:scale-110 transition-transform duration-300" />
+                <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 group-hover:shadow-lg group-hover:shadow-accent/15 transition-all duration-300">
+                  <service.icon className="w-7 h-7 text-accent group-hover:scale-110 group-hover:rotate-3 transition-all duration-300" />
                 </div>
                 <h3 className="font-heading text-2xl text-foreground mb-4">
                   {service.title}

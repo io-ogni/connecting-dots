@@ -50,12 +50,12 @@ const Testimonials = () => {
           {testimonials.map((t, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 30, rotate: -1 }}
+              whileInView={{ opacity: 1, y: 0, rotate: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.15 }}
-              whileHover={{ y: -6, transition: { duration: 0.3 } }}
-              className="group relative bg-background/80 backdrop-blur-sm rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-500 border border-border/50"
+              transition={{ type: "spring", stiffness: 100, delay: i * 0.12 }}
+              whileHover={{ y: -8, scale: 1.02, transition: { type: "spring", stiffness: 300 } }}
+              className="group relative bg-background/70 backdrop-blur-md rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-shadow duration-500 border border-border/30 hover:border-accent/30"
             >
               <div className="absolute top-0 left-8 right-8 h-0.5 bg-gradient-to-r from-transparent via-accent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 

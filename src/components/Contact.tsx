@@ -22,7 +22,7 @@ const Contact = () => {
           </p>
           <a
             href="mailto:hello@connecting-dots.coach"
-            className="inline-block bg-primary text-primary-foreground px-10 py-4 font-body text-sm tracking-widest uppercase hover:opacity-90 transition-opacity duration-300"
+            className="inline-block bg-accent text-accent-foreground px-10 py-4 font-body text-sm tracking-widest uppercase hover:opacity-90 transition-opacity duration-300"
           >
             Get in touch
           </a>

@@ -42,7 +42,7 @@ const Hero = () => {
         >
           <a
             href="#why-coaching"
-            className="inline-block border border-primary-foreground/50 text-primary-foreground px-8 py-3 font-body text-sm tracking-widest uppercase hover:bg-primary-foreground/10 transition-colors duration-300"
+            className="inline-block bg-accent text-accent-foreground px-8 py-3 font-body text-sm tracking-widest uppercase hover:opacity-90 transition-opacity duration-300"
           >
             Discover more
           </a>

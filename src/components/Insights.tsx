@@ -33,10 +33,10 @@ const Insights = () => (
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
               <Link to={`/articles/${article.slug}`} className="group block">
-                <div className="bg-card rounded-sm p-8 h-full flex flex-col border border-border/50 hover:border-accent/40 transition-colors duration-300">
+                <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-8 h-full flex flex-col border border-border/30 hover:border-accent/40 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                   <div className="flex items-center gap-3 mb-5">
-                    <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
-                      <Icon className="w-5 h-5 text-accent" />
+                    <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 group-hover:shadow-md group-hover:shadow-accent/10 transition-all duration-300">
+                      <Icon className="w-5 h-5 text-accent group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <span className="font-body text-xs tracking-widest uppercase text-accent">
                       {article.tag}

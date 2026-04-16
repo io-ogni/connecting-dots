@@ -49,7 +49,7 @@ const Hero = () => {
         >
           <a
             href="#why-coaching"
-            className="inline-block bg-accent text-accent-foreground px-8 py-3 font-body text-sm tracking-widest uppercase hover:opacity-90 transition-opacity duration-300"
+            className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded-full font-body text-sm tracking-widest uppercase hover:scale-105 hover:shadow-lg hover:shadow-accent/25 transition-all duration-300"
           >
             Discover more
           </a>

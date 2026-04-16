@@ -23,7 +23,7 @@ const Contact = () => {
           </p>
           <a
             href="mailto:hello@connecting-dots.coach"
-            className="inline-block bg-accent text-accent-foreground px-10 py-4 font-body text-sm tracking-widest uppercase hover:opacity-90 transition-opacity duration-300"
+            className="inline-block bg-accent text-accent-foreground px-10 py-4 rounded-full font-body text-sm tracking-widest uppercase hover:scale-105 hover:shadow-lg hover:shadow-accent/25 transition-all duration-300"
           >
             Say hello
           </a>

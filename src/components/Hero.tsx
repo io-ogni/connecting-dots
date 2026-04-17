@@ -26,13 +26,29 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="font-heading text-5xl md:text-7xl lg:text-8xl text-primary-foreground leading-[1.1] mb-6"
+          className="font-heading text-6xl md:text-8xl lg:text-9xl text-primary-foreground leading-[0.95] mb-6 tracking-tight"
         >
-          You're not lost.
-          <br />
-          <em className="font-normal">You're just ready</em>
-          <br />
-          to grow.
+          <span className="block">You're not lost.</span>
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.8 }}
+            className="block italic font-medium bg-gradient-to-r from-[hsl(25_70%_82%)] via-[hsl(15_75%_75%)] to-[hsl(340_60%_78%)] bg-clip-text text-transparent py-2"
+          >
+            You're just ready
+          </motion.span>
+          <span className="block">
+            to{" "}
+            <span className="relative inline-block">
+              <span className="relative z-10">grow.</span>
+              <motion.span
+                initial={{ scaleX: 0 }}
+                animate={{ scaleX: 1 }}
+                transition={{ duration: 1.2, delay: 1.4, ease: "easeOut" }}
+                className="absolute left-0 right-0 bottom-2 md:bottom-3 h-3 md:h-4 bg-accent/50 origin-left -z-0 rounded-sm"
+              />
+            </span>
+          </span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}

@@ -6,19 +6,19 @@ const services = [
     icon: Compass,
     title: "Personal Development",
     description:
-      "Figure out what you actually want — not what you think you should want. We'll cut through the noise and reconnect you with your values, strengths, and the things that light you up.",
+      "The bottom line in any change we go through in our lives is the fact that we grow. This requires courage for self discovery, a strong connection to the reality, but also to our creative child within us, whose limitless imagination supports our dreams and our possibilities of changing this reality.",
   },
   {
     icon: Users,
-    title: "Team Leadership",
+    title: "Team leadership",
     description:
-      "You got promoted. Now what? Build the confidence to lead authentically — with empathy, clarity, and your own style. No corporate playbook required.",
+      "There are several areas in which coaching can help create a positive change: articulating the vision, team motivation, communication and feedback, strategic thinking, emotional intelligence. What kind of leader do you want to be?",
   },
   {
     icon: Clock,
-    title: "Time Management",
+    title: "Time management",
     description:
-      "Always busy, never productive? Let's find out where your time actually goes and build systems that work with your brain — not against it.",
+      "We cannot manage time, just as we cannot manage space; what we can do is decide on what we focus, pragmatically plan what we can achieve, learn from what went wrong and improve. Coaching can support you in finding your own system for handling tasks and priorities, in deciding what is important vs. what is urgent.",
   },
 ];
 
@@ -39,11 +39,8 @@ const Services = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <p className="text-accent font-body text-sm tracking-[0.2em] uppercase mb-4">
-              How I can help
-            </p>
             <h2 className="font-heading text-4xl md:text-5xl text-foreground">
-              Three areas, one goal: clarity
+              Coaching &amp; Mentoring services
             </h2>
           </motion.div>
 

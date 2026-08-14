@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import portrait from "@/assets/coach-portrait.jpg";
+import portraitAsset from "@/assets/coach-portrait.jpg.asset.json";
 
 const About = () => {
   return (

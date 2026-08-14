@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import heroStars from "@/assets/hero-stars.jpg.asset.json";
+import heroStars from "@/assets/hero-stars.jpg";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <img
-        src={heroStars.url}
+        src={heroStars}
         alt="A person standing under the Milky Way in a vivid starlit sky"
         className="absolute inset-0 w-full h-full object-cover object-center"
         width={1920}

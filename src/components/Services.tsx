@@ -31,22 +31,23 @@ const Services = () => {
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)', backgroundSize: '40px 40px' }} />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <p className="text-accent font-body text-sm tracking-[0.2em] uppercase mb-4">
-            How I can help
-          </p>
-          <h2 className="font-heading text-4xl md:text-5xl text-foreground">
-            Three areas, one goal: clarity
-          </h2>
-        </motion.div>
+        <div className="bg-background/85 backdrop-blur-md rounded-3xl shadow-2xl border border-border/30 p-8 md:p-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <p className="text-accent font-body text-sm tracking-[0.2em] uppercase mb-4">
+              How I can help
+            </p>
+            <h2 className="font-heading text-4xl md:text-5xl text-foreground">
+              Three areas, one goal: clarity
+            </h2>
+          </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-3 gap-10">
           {services.map((service, i) => (
             <motion.div
               key={service.title}
@@ -65,12 +66,13 @@ const Services = () => {
                 <h3 className="font-heading text-2xl text-foreground mb-4">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground font-body leading-relaxed">
+                <p className="text-foreground/80 font-body leading-relaxed">
                   {service.description}
                 </p>
               </div>
             </motion.div>
           ))}
+        </div>
         </div>
       </div>
     </section>

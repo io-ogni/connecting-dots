@@ -11,7 +11,7 @@ const Hero = () => {
         width={1920}
         height={1280}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-transparent to-background/70" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[hsl(252_40%_8%/0.35)] via-[hsl(252_40%_8%/0.25)] to-background/70" />
 
       <div className="relative z-10 text-center px-6 max-w-3xl">
         <motion.p
@@ -26,27 +26,36 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="font-heading text-5xl md:text-7xl lg:text-8xl text-primary-foreground leading-[0.95] mb-6 tracking-tight"
+          className="font-heading text-5xl md:text-7xl lg:text-8xl leading-[1.15] mb-6 tracking-tight flex flex-col items-center gap-2"
         >
-          <span className="block">Connect the dots,</span>
+          <span className="relative inline-block px-4 py-1">
+            <span className="absolute inset-0 -skew-y-1 rounded-lg bg-[hsl(252_45%_12%/0.72)] backdrop-blur-[2px]" />
+            <span className="relative text-primary-foreground">Connect the dots,</span>
+          </span>
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.8 }}
-            className="block italic font-medium bg-gradient-to-r from-[hsl(25_70%_82%)] via-[hsl(15_75%_75%)] to-[hsl(340_60%_78%)] bg-clip-text text-transparent py-2"
+            className="relative inline-block px-4 py-1"
           >
-            design your life
+            <span className="absolute inset-0 -skew-y-1 rounded-lg bg-[hsl(252_45%_12%/0.72)] backdrop-blur-[2px]" />
+            <span className="relative italic font-medium bg-gradient-to-r from-[hsl(28_85%_78%)] via-[hsl(15_80%_74%)] to-[hsl(300_55%_80%)] bg-clip-text text-transparent">
+              design your life
+            </span>
           </motion.span>
-          <span className="block">
-            with{" "}
-            <span className="relative inline-block">
-              <span className="relative z-10">clarity.</span>
-              <motion.span
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: 1 }}
-                transition={{ duration: 1.2, delay: 1.4, ease: "easeOut" }}
-                className="absolute left-0 right-0 bottom-2 md:bottom-3 h-3 md:h-4 bg-accent/50 origin-left -z-0 rounded-sm"
-              />
+          <span className="relative inline-block px-4 py-1">
+            <span className="absolute inset-0 -skew-y-1 rounded-lg bg-[hsl(252_45%_12%/0.72)] backdrop-blur-[2px]" />
+            <span className="relative text-primary-foreground">
+              with{" "}
+              <span className="relative inline-block">
+                <span className="relative z-10">clarity.</span>
+                <motion.span
+                  initial={{ scaleX: 0 }}
+                  animate={{ scaleX: 1 }}
+                  transition={{ duration: 1.2, delay: 1.4, ease: "easeOut" }}
+                  className="absolute left-0 right-0 bottom-1 md:bottom-2 h-3 md:h-4 bg-accent/60 origin-left -z-0 rounded-sm"
+                />
+              </span>
             </span>
           </span>
         </motion.h1>

@@ -55,32 +55,7 @@ const Hero = () => {
             </span>
           </span>
         </motion.h1>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.2 }}
-          className="mt-10"
-        >
-          <a
-            href="#why-coaching"
-            className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded-full font-body text-sm tracking-widest uppercase hover:scale-105 hover:shadow-lg hover:shadow-accent/25 transition-all duration-300"
-          >
-            Discover more
-          </a>
-        </motion.div>
       </div>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2"
-      >
-        <div className="w-px h-16 bg-primary-foreground/40 mx-auto mb-2" />
-        <span className="text-primary-foreground/50 text-xs tracking-widest uppercase font-body">
-          Scroll
-        </span>
-      </motion.div>
     </section>
   );
 };

@@ -19,7 +19,7 @@ const testimonials = [
     quote:
       "She kept me focused and held me accountable. After our sessions I had confidence, clarity on next steps, and actual motivation again. Can't recommend her enough.",
     name: "Kevin R.",
-    location: "Dublin, Ireland",
+    location: "Augsburg, Germany",
     emoji: "🔥",
   },
 ];

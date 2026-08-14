@@ -1,4 +1,5 @@
 import { Mail, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const SiteFooter = () => (
   <footer className="bg-accent text-accent-foreground">
@@ -38,13 +39,30 @@ const SiteFooter = () => (
               <Mail className="w-4 h-4" /> ioana@connecting-dots.coach
             </a>
             <p className="flex items-center gap-2 font-body text-sm text-accent-foreground/70">
-              <MapPin className="w-4 h-4" /> Dublin, Ireland
+              <MapPin className="w-4 h-4" /> Augsburg, Germany
             </p>
           </div>
         </div>
       </div>
-      <div className="border-t border-accent-foreground/20 pt-8 text-center">
-        <p className="font-body text-xs text-accent-foreground/50">
+      <div className="border-t border-accent-foreground/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+          {[
+            { to: "/agreement-disclaimer", label: "Agreement & Disclaimer" },
+            { to: "/privacy-policy", label: "Privacy Policy" },
+            { to: "/datenschutzerklarung", label: "Datenschutzerklärung" },
+            { to: "/impressum-page", label: "Impressum" },
+            { to: "/photos-credit", label: "Photos Credit" },
+          ].map((l) => (
+            <Link
+              key={l.to}
+              to={l.to}
+              className="font-body text-xs text-accent-foreground/70 hover:text-accent-foreground transition-colors"
+            >
+              {l.label}
+            </Link>
+          ))}
+        </nav>
+        <p className="font-body text-xs text-accent-foreground/50 text-center">
           © {new Date().getFullYear()} Ioana Ognibeni. All rights reserved.
         </p>
       </div>

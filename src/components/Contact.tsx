@@ -10,22 +10,18 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-accent font-body text-sm tracking-[0.2em] uppercase mb-4">
-            No commitment, no pressure
-          </p>
           <h2 className="font-heading text-4xl md:text-5xl text-foreground mb-6">
-            Curious? Let's talk.
+            Get in touch
           </h2>
           <p className="text-muted-foreground font-body text-lg leading-relaxed mb-10">
-            A first conversation is just that — a conversation. No sales pitch, 
-            no awkward silence. Just an honest chat about where you are and 
-            where you'd like to go.
+            If you would like to find out more about coaching or to schedule a first
+            conversation, I would be happy to hear from you.
           </p>
           <a
-            href="mailto:hello@connecting-dots.coach"
+            href="mailto:ioana@connecting-dots.coach"
             className="inline-block bg-accent text-accent-foreground px-10 py-4 rounded-full font-body text-sm tracking-widest uppercase hover:scale-105 hover:shadow-lg hover:shadow-accent/25 transition-all duration-300"
           >
-            Say hello
+            Contact me
           </a>
         </motion.div>
       </div>

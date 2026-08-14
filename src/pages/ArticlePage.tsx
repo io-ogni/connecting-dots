@@ -53,7 +53,7 @@ const ArticlePage = () => {
       // Numbered items (1. or **1.**)
       if (/^\d+\./.test(trimmed) || /^\*\*\d+/.test(trimmed)) {
         return (
-          <p key={i} className="font-body text-lg leading-relaxed text-foreground/85 mb-4">
+          <p key={i} className="font-body text-lg leading-relaxed text-foreground mb-4">
             {renderInline(trimmed)}
           </p>
         );
@@ -104,16 +104,16 @@ const ArticlePage = () => {
           >
             <Link
               to="/#insights"
-              className="inline-flex items-center gap-2 text-accent font-body text-sm tracking-widest uppercase mb-10 hover:gap-3 transition-all duration-300"
+              className="inline-flex items-center gap-2 text-brand-gold font-body text-sm tracking-widest uppercase mb-10 hover:gap-3 transition-all duration-300"
             >
               <ArrowLeft className="w-4 h-4" /> Back to insights
             </Link>
 
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
-                <Icon className="w-5 h-5 text-accent" />
+              <div className="w-10 h-10 rounded-full bg-brand-gold/10 flex items-center justify-center">
+                <Icon className="w-5 h-5 text-brand-gold" />
               </div>
-              <span className="font-body text-xs tracking-widest uppercase text-accent">
+              <span className="font-body text-xs tracking-widest uppercase text-brand-gold">
                 {article.tag}
               </span>
             </div>
@@ -140,7 +140,7 @@ const ArticlePage = () => {
           >
             <Link
               to="/#insights"
-              className="inline-flex items-center gap-2 text-accent font-body text-sm tracking-widest uppercase hover:gap-3 transition-all duration-300"
+              className="inline-flex items-center gap-2 text-brand-gold font-body text-sm tracking-widest uppercase hover:gap-3 transition-all duration-300"
             >
               <ArrowLeft className="w-4 h-4" /> Back to all articles
             </Link>

@@ -24,7 +24,7 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section className="py-24 md:py-32 bg-secondary relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-72 h-72 bg-accent/5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl" />
+      <div className="absolute top-0 left-0 w-72 h-72 bg-brand-rose/5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full translate-x-1/3 translate-y-1/3 blur-3xl" />
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">

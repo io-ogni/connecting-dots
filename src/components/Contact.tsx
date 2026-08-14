@@ -18,7 +18,7 @@ const Contact = () => {
             conversation, I would be happy to hear from you.
           </p>
           <a
-            href="mailto:ioana@connecting-dots.coach"
+            href="mailto:contact@ioana-ognibeni.eu"
             className="inline-block bg-accent text-accent-foreground px-10 py-4 rounded-full font-body text-sm tracking-widest uppercase hover:scale-105 hover:shadow-lg hover:shadow-accent/25 transition-all duration-300"
           >
             Contact me

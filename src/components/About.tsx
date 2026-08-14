@@ -10,7 +10,7 @@ const About = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="md:col-span-2"
+          className="md:col-span-2 md:order-2"
         >
           <img
             src={portraitAsset}
@@ -27,7 +27,7 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="md:col-span-3"
+          className="md:col-span-3 md:order-1"
         >
           <h2 className="font-heading text-4xl md:text-5xl text-foreground leading-tight mb-8">
             About me
@@ -36,23 +36,19 @@ const About = () => {
             <p>
               I am Ioana Ognibeni (Marinescu) – certified Personal, Leadership &amp; Executive
               Coach (Kingstown College, Ireland), member of EMCC and experienced IT Product and
-              Project Manager, with over a decade of delivering IT projects and products which
-              are touching the lives of tens of millions of people.
+              Project Manager, with close to two decades of delivering technology that touches
+              the lives of tens of millions of people.
             </p>
             <p>
-              Having successfully delivered several multi-million dollar projects and having led
-              countless teams from all over the world, I am proud and grateful to have worked
-              together with incredibly talented and bright people, from whom I learned and
-              continue to learn every day.
+              I share my enthusiasm between the products and projects whose success I've been a
+              part of, and the coaching topic that I am deeply passionate about, in various
+              approaches and schools of thought.
             </p>
             <p>
-              I share my enthusiasm between the IT products and projects of whose success I've
-              been a part of, and the coaching topic that I am deeply passionate about, in
-              various approaches and schools of thought. In that respect I have also acquired
-              hundreds of hours of training in Transactional Analysis and in other various
-              psychology topics.
+              In that respect I have also acquired hundreds of hours of training in
+              Transactional Analysis and in other various psychology topics.
             </p>
-            <p className="text-foreground font-medium italic border-l-3 border-accent pl-6 bg-accent/5 py-4 pr-4 rounded-r-xl">
+            <p className="font-hand text-3xl md:text-4xl leading-snug -rotate-2 origin-left mt-8 mb-2">
               In my personal practice, coaching is all about creating a safe space for
               reflection and creativity, where the Client feels empowered to connect the dots
               and to reach more clarity and focus during a change process.

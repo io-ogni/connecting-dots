@@ -31,7 +31,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="font-heading text-5xl md:text-7xl lg:text-8xl leading-[1.15] mb-6 tracking-tight flex flex-col items-center gap-2"
+          className="font-display text-5xl md:text-7xl lg:text-8xl leading-[1.15] mb-6 tracking-tight flex flex-col items-center gap-2"
         >
           <motion.span
             initial={{ opacity: 0, y: 20 }}
@@ -54,7 +54,7 @@ const Hero = () => {
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
                   transition={{ duration: 1.2, delay: 1.1, ease: "easeOut" }}
-                  className="absolute left-0 right-0 bottom-1 md:bottom-2 h-3 md:h-4 bg-accent/60 origin-left -z-0 rounded-sm"
+                  className="absolute left-0 right-0 bottom-1 md:bottom-2 h-3 md:h-4 bg-[hsl(338_75%_67%/0.8)] origin-left -z-0 rounded-sm"
                 />
               </span>
             </span>

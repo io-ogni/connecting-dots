@@ -1,5 +1,7 @@
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
+
+const LINKEDIN_URL = "https://www.linkedin.com/in/ioanamarinescu/";
 
 const SiteFooter = () => (
   <footer className="bg-accent text-accent-foreground">
@@ -16,7 +18,7 @@ const SiteFooter = () => (
             Quick links
           </p>
           <nav className="flex flex-col gap-2">
-            {["Why coaching", "Services", "About", "Insights", "Contact"].map((item) => (
+            {["Why coaching", "Services", "About", "Insights"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(" ", "-")}`}
@@ -33,14 +35,22 @@ const SiteFooter = () => (
           </p>
           <div className="space-y-3">
             <a
-              href="mailto:ioana@connecting-dots.coach"
+              href="mailto:contact@ioana-ognibeni.eu"
               className="flex items-center gap-2 font-body text-sm text-accent-foreground/70 hover:text-accent-foreground transition-colors"
             >
-              <Mail className="w-4 h-4" /> ioana@connecting-dots.coach
+              <Mail className="w-4 h-4" /> contact@ioana-ognibeni.eu
             </a>
             <p className="flex items-center gap-2 font-body text-sm text-accent-foreground/70">
               <MapPin className="w-4 h-4" /> Augsburg, Germany
             </p>
+            <a
+              href={LINKEDIN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-2 rounded-full border border-accent-foreground/30 px-4 py-2 font-body text-sm text-accent-foreground/90 hover:bg-accent-foreground/10 hover:text-accent-foreground transition-colors"
+            >
+              <Linkedin className="w-4 h-4" /> Connect on LinkedIn
+            </a>
           </div>
         </div>
       </div>

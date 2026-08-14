@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,21 +16,25 @@
     --primary: 252 45% 26%;
     --primary-foreground: 40 40% 97%;
 
-    --secondary: 265 25% 91%;
-    --secondary-foreground: 250 30% 14%;
+    --secondary: 350 30% 91%;
+    --secondary-foreground: 250 30% 16%;
 
-    --muted: 265 20% 93%;
-    --muted-foreground: 252 12% 44%;
+    --muted: 30 22% 92%;
+    --muted-foreground: 250 20% 32%;
 
-    --accent: 175 55% 38%;
+    --accent: 193 43% 27%;
     --accent-foreground: 40 40% 97%;
+
+    --brand-rose: 335 48% 50%;
+    --brand-violet: 272 45% 46%;
+    --brand-gold: 34 55% 40%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 260 18% 87%;
-    --input: 260 18% 87%;
-    --ring: 252 45% 26%;
+    --border: 28 18% 86%;
+    --input: 28 18% 86%;
+    --ring: 193 43% 27%;
 
     --radius: 0.75rem;
 
@@ -40,14 +42,15 @@
     --sidebar-foreground: 250 30% 14%;
     --sidebar-primary: 252 45% 26%;
     --sidebar-primary-foreground: 40 40% 97%;
-    --sidebar-accent: 265 25% 91%;
-    --sidebar-accent-foreground: 250 30% 14%;
-    --sidebar-border: 260 18% 87%;
-    --sidebar-ring: 252 45% 26%;
+    --sidebar-accent: 350 30% 91%;
+    --sidebar-accent-foreground: 250 30% 16%;
+    --sidebar-border: 28 18% 86%;
+    --sidebar-ring: 193 43% 27%;
 
-    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-heading: 'Sora', system-ui, sans-serif;
     --font-body: 'Source Sans 3', system-ui, sans-serif;
 
+    --hand-ink: 335 24% 27%;
     --hero-overlay: linear-gradient(180deg, hsla(252, 40%, 8%, 0.35) 0%, hsla(252, 40%, 8%, 0.65) 100%);
     --warm-glow: radial-gradient(ellipse at 30% 50%, hsla(28, 80%, 70%, 0.18) 0%, transparent 70%);
   }
@@ -65,7 +68,7 @@
     --secondary-foreground: 40 35% 92%;
     --muted: 252 25% 18%;
     --muted-foreground: 265 15% 65%;
-    --accent: 175 55% 48%;
+    --accent: 350 50% 66%;
     --accent-foreground: 252 40% 7%;
     --border: 252 22% 22%;
     --input: 252 22% 22%;
@@ -86,8 +89,13 @@
     @apply border-border;
   }
 
+  html {
+    font-size: 17px;
+  }
+
   body {
     @apply bg-background text-foreground font-body antialiased;
+    line-height: 1.65;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -102,4 +110,27 @@
   .font-body {
     font-family: var(--font-body);
   }
+  .font-hand {
+    font-family: 'Caveat', cursive;
+    color: hsl(var(--hand-ink));
+  }
+  .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .marker {
+    --mk: 41 88% 62%;
+    background-image: linear-gradient(
+      -100deg,
+      hsl(var(--mk) / 0.10),
+      hsl(var(--mk) / 0.58) 94%,
+      hsl(var(--mk) / 0.16)
+    );
+    border-radius: 0.9em 0.35em 0.7em 0.4em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    padding: 0.04em 0.3em;
+  }
+  .marker-gold   { --mk: 41 88% 62%; }
+  .marker-rose   { --mk: 336 78% 70%; }
+  .marker-violet { --mk: 272 60% 70%; }
 }

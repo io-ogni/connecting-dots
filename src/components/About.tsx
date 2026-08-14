@@ -46,7 +46,7 @@ const About = () => {
             </p>
             <p>
               In that respect I have also acquired hundreds of hours of training in
-              Transactional Analysis and in other various psychology topics.
+              Transactional Analysis and in other various psychology areas.
             </p>
             <p className="font-hand text-3xl md:text-4xl leading-snug -rotate-2 origin-left mt-8 mb-2">
               In my personal practice, coaching is all about creating a safe space for

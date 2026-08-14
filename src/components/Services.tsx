@@ -60,7 +60,7 @@ const Services = () => {
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)', backgroundSize: '40px 40px' }} />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
-        <div className="bg-background/85 backdrop-blur-md rounded-3xl shadow-2xl border border-border/30 p-8 md:p-12">
+        <div className="bg-background/85 backdrop-blur-md rounded-3xl shadow-2xl border border-border/30 p-3 sm:p-8 md:p-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -82,7 +82,7 @@ const Services = () => {
               viewport={{ once: true }}
               transition={{ type: "spring", stiffness: 100, delay: i * 0.12 }}
               whileHover={{ y: -6, scale: 1.02, transition: { type: "spring", stiffness: 300 } }}
-              className="relative bg-background/60 backdrop-blur-md p-10 rounded-3xl group hover:shadow-2xl transition-all duration-500 border border-border/30 hover:border-brand-violet/40"
+              className="relative bg-background/60 backdrop-blur-md p-6 md:p-10 rounded-3xl group hover:shadow-2xl transition-all duration-500 border border-border/30 hover:border-brand-violet/40"
             >
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-brand-violet/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="relative z-10">

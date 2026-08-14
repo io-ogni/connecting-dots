@@ -96,7 +96,7 @@ const WhyCoaching = () => {
               aria-hidden="true"
               preserveAspectRatio="none"
               viewBox="0 0 620 240"
-              className="pointer-events-none absolute -inset-x-12 -inset-y-11"
+              className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%+3rem)] h-[calc(100%+3rem)]"
             >
               <path
                 d="M316 18C170 12 40 52 26 116C12 182 156 228 322 228C490 228 606 184 606 116C606 58 498 24 344 16C286 13 232 17 190 28C150 39 96 66 78 104"

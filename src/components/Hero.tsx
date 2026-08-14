@@ -50,14 +50,6 @@ const Hero = () => {
             </span>
           </span>
         </motion.h1>
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.9 }}
-          className="text-primary-foreground/70 font-body text-lg md:text-xl max-w-xl mx-auto mb-10"
-        >
-          Coaching for ambitious professionals who are ready to stop running on autopilot and start designing a life that actually fits.
-        </motion.p>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

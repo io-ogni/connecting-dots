@@ -18,9 +18,14 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-primary-foreground/80 font-body text-lg tracking-[0.25em] uppercase mb-6"
+          className="font-body text-lg tracking-[0.25em] uppercase mb-6"
         >
-          Coaching &amp; Mentoring
+          <span className="relative inline-block px-4 py-2">
+            <span className="absolute inset-0 -skew-y-1 rounded-lg bg-[hsl(252_45%_12%/0.72)] backdrop-blur-[2px]" />
+            <span className="relative text-primary-foreground/90">
+              Coaching &amp; Mentoring
+            </span>
+          </span>
         </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 30 }}

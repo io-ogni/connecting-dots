@@ -54,6 +54,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.2 }}
+          className="mt-10"
         >
           <a
             href="#why-coaching"

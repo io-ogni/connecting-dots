@@ -11,7 +11,7 @@ const Hero = () => {
         width={1920}
         height={1280}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-[hsl(252_40%_8%/0.35)] via-[hsl(252_40%_8%/0.25)] to-background/70" />
+      
 
       <div className="relative z-10 text-center px-6 max-w-3xl">
         <motion.p

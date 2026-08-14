@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { legalPages } from "@/data/legalPages";
 import SiteHeader from "@/components/SiteHeader";
@@ -79,7 +79,7 @@ const renderContent = (text: string) =>
   });
 
 const LegalPage = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const slug = useLocation().pathname.replace(/^\/|\/$/g, "");
   const page = legalPages.find((p) => p.slug === slug);
 
   useEffect(() => {

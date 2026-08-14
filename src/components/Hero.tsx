@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroStars from "@/assets/hero-stars.jpg.asset.json";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <img
-        src={heroBg}
-        alt="A sunlit path through a forest"
-        className="absolute inset-0 w-full h-full object-cover"
+        src={heroStars.url}
+        alt="A person standing under the Milky Way in a vivid starlit sky"
+        className="absolute inset-0 w-full h-full object-cover object-center"
         width={1920}
-        height={1080}
+        height={1280}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-foreground/30 to-foreground/60" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-transparent to-background/70" />
 
       <div className="relative z-10 text-center px-6 max-w-3xl">
         <motion.p

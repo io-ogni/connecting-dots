@@ -3,23 +3,23 @@ import { motion } from "framer-motion";
 const testimonials = [
   {
     quote:
-      "Coaching with Ioana was a bliss — a moment of coherence, clarity, and an energy booster. She helped me step back from daily chaos to find meaning and real pleasure in my work.",
+      "Coaching with Ioana was a bliss, a special moment of coherence, clarity, and energy booster. The sessions took place during a peculiar period of my career during an organizational change with lots of potential but also chaotic activities and intense work. Ioana guided me in creating a method to cope with urgency and with important issues. She is such a dedicated and good listener capable to understand a situation in depth and to design tools and tips with great intelligence and empathy. She helped me taking a distance from my daily work in order to project myself and find meaning and pleasure in my job. Having Ioana in this journey as a coach was an essential and useful delight.",
     name: "Cristina O.",
     location: "Paris, France",
     emoji: "✨",
   },
   {
     quote:
-      "Ioana helped me identify my real goals and priorities — not the ones I thought I should have. Positive, clear, patient, and incredibly knowledgeable. The best coach I've worked with.",
+      "During the coaching sessions, Ioana guided me to identify better my personal and professional goals and priorities. Positive attitude, clear communication, patience, very knowledgeable – all these qualities make Ioana the best coach that I worked with. It has been a pleasure to be coached by Ioana and I strongly recommend her to anyone who is looking for professional coaching. All the coaching sessions have really added value to my life. Thank you for the insightful sessions, Ioana!",
     name: "Fani P.",
     location: "Bucharest, Romania",
     emoji: "🌿",
   },
   {
     quote:
-      "She kept me focused and held me accountable. After our sessions I had confidence, clarity on next steps, and actual motivation again. Can't recommend her enough.",
+      "Ioana is a great coach. I felt very comfortable in our coaching sessions and she created a safe space for me to share. I realised that I needed a coach to move me forward, create objectives and help me to start clearly thinking again. Ioana was this person, she was great. She listened to everything I said and really kept me focused. She also held me accountable for the goals I set for myself. My sessions with Ioana have given me confidence, clarity of the next steps to take and also created me to be motivated again. She is very professional and I would very highly recommend Ioana.",
     name: "Kevin R.",
-    location: "Augsburg, Germany",
+    location: "Dublin, Ireland",
     emoji: "🔥",
   },
 ];
@@ -38,11 +38,8 @@ const Testimonials = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-accent font-body text-sm tracking-[0.2em] uppercase mb-4">
-            Real people, real shifts
-          </p>
           <h2 className="font-heading text-4xl md:text-5xl text-foreground">
-            What clients say
+            Testimonials
           </h2>
         </motion.div>
 
@@ -61,7 +58,7 @@ const Testimonials = () => {
 
               <span className="text-3xl mb-4 block">{t.emoji}</span>
 
-              <blockquote className="font-heading text-lg text-foreground leading-relaxed italic mb-8">
+              <blockquote className="font-heading text-base text-foreground leading-relaxed italic mb-8">
                 "{t.quote}"
               </blockquote>
 

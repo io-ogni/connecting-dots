@@ -28,14 +28,10 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className="font-heading text-5xl md:text-7xl lg:text-8xl leading-[1.15] mb-6 tracking-tight flex flex-col items-center gap-2"
         >
-          <span className="relative inline-block px-4 py-1">
-            <span className="absolute inset-0 -skew-y-1 rounded-lg bg-[hsl(252_45%_12%/0.72)] backdrop-blur-[2px]" />
-            <span className="relative text-primary-foreground">Connect the dots,</span>
-          </span>
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.8 }}
+            transition={{ duration: 1, delay: 0.5 }}
             className="relative inline-block px-4 py-1"
           >
             <span className="absolute inset-0 -skew-y-1 rounded-lg bg-[hsl(252_45%_12%/0.72)] backdrop-blur-[2px]" />
@@ -52,7 +48,7 @@ const Hero = () => {
                 <motion.span
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
-                  transition={{ duration: 1.2, delay: 1.4, ease: "easeOut" }}
+                  transition={{ duration: 1.2, delay: 1.1, ease: "easeOut" }}
                   className="absolute left-0 right-0 bottom-1 md:bottom-2 h-3 md:h-4 bg-accent/60 origin-left -z-0 rounded-sm"
                 />
               </span>

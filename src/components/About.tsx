@@ -34,7 +34,7 @@ const About = () => {
           </h2>
           <div className="space-y-5 text-muted-foreground font-body text-lg leading-relaxed">
             <p>
-              I am Ioana Ognibeni (Marinescu) – certified Personal, Leadership &amp; Executive
+              I am Ioana Ognibeni – certified Personal, Leadership &amp; Executive
               Coach (Kingstown College, Ireland), member of EMCC and experienced IT Product and
               Project Manager, with close to two decades of delivering technology that touches
               the lives of tens of millions of people.

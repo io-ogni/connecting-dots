@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import portrait from "@/assets/coach-portrait.jpg";
+import portraitAsset from "@/assets/coach-portrait.jpg.asset.json";
 
 const About = () => {
   return (
@@ -13,7 +13,7 @@ const About = () => {
           className="md:col-span-2"
         >
           <img
-            src={portrait}
+            src={portraitAsset.url}
             alt="Ioana Ognibeni, Personal & Leadership Coach"
             className="w-full rounded-2xl shadow-2xl hover:shadow-3xl transition-shadow duration-500"
             loading="lazy"

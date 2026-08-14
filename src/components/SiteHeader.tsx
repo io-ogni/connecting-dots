@@ -35,7 +35,7 @@ const SiteHeader = () => {
         <Link
           to="/"
           onClick={() => setMenuOpen(false)}
-          className={`font-heading text-xl transition-colors duration-300 ${
+          className={`font-heading text-base md:text-xl transition-colors duration-300 ${
             solid ? "text-foreground" : "text-primary-foreground"
           }`}
         >
